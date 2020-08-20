@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>// strlen 함수가 포함된 헤더파일
+
+int main() {
+	char str[100];
+	int ste;
+	char temp;
+
+
+	scanf("%s", str);
+	ste = strlen(str);// 문자열 사이즈
+
+	for (int i = 0; i < ste / 2; i++) {
+		temp = str[ste - i - 1]; // 배열은 0 부터 시작하고 ste는 사이즈이기에 -1을 추가 
+		str[ste - i - 1] = str[i];
+		str[i] = temp;
+	}
+
+	printf("%s", str);
+	return 0;
+}
