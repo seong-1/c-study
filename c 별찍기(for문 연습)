@@ -6,7 +6,7 @@ int main() {
 	int num;
 	int i, j;
 
-	scanf_s("%d", &num);//높이
+	scanf("%d", &num);//높이
 	
 	//직각삼각형
 	printf("\n직각삼각형\n");
